@@ -1,0 +1,26 @@
+.cyanBack{
+background-color: cyan;
+
+}
+.contain{
+    outline: rgb(169, 229, 240);
+    outline-width: 10px;
+    outline-style: dotted;
+    object-position: center;
+
+    border-radius: 15%;
+    border-width: 15px;
+    border-color: blueviolet;
+    border-style: dashed;
+    inherits: true;
+}
+.grid-container {
+    object-position: center ;
+  display: grid;  
+  grid-template-rows: 1ex;
+  grid-auto-flow: column;
+
+}
+.flex-input-text{
+    display: flex;
+}
