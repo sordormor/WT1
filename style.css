@@ -2,25 +2,66 @@
 background-color: cyan;
 
 }
+.redBack{
+    background-color: rgb(255, 0, 0);
+}
 .contain{
-    outline: rgb(169, 229, 240);
-    outline-width: 10px;
+    outline: rgb(0, 39, 46);
+    outline-width: 2px;
     outline-style: dotted;
     object-position: center;
 
-    border-radius: 15%;
-    border-width: 15px;
-    border-color: blueviolet;
+    margin-trim: all;
+
+    border-radius: 5%;
+    border-width: 2px;
+    border-color: rgb(197, 215, 221);
     border-style: dashed;
     inherits: true;
+}
+
+.liSt{
+    border-color: crimson;
+    border-width: 1px;
+    border-style: solid;
+    border-radius:10% ;
+    border-top: 0cap;
+    border-left: 0cap;
+    border-right: 0cap;
 }
 .grid-container {
     object-position: center ;
   display: grid;  
   grid-template-rows: 1ex;
   grid-auto-flow: column;
-
 }
 .flex-input-text{
     display: flex;
+}
+.headSt{
+    /* margin-inline: border; */
+    border-radius: 10%;
+    border-width: 15px;
+    border-color: rgb(0, 26, 255);
+    border-style: solid;
+}
+.footSt{
+    background-color: rgb(255, 0, 0);
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+.ul-nav{
+    display:flex;
+    align-self: center;
+    align-items: center;
+    /* align-items: end; */
+    gap: 1%;
+}
+.formsSt{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    left: 50%;
 }
