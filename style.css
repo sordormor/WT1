@@ -6,18 +6,19 @@ background-color: cyan;
     background-color: rgb(255, 0, 0);
 }
 .contain{
+
     outline: rgb(0, 39, 46);
     outline-width: 2px;
     outline-style: dotted;
     object-position: center;
 
-    margin-trim: all;
+    /* margin-trim: all; */
 
     border-radius: 5%;
     border-width: 2px;
     border-color: rgb(197, 215, 221);
     border-style: dashed;
-    inherits: true;
+    /* inherits: true; */
 }
 
 .liSt{
@@ -56,9 +57,12 @@ background-color: cyan;
     align-self: center;
     align-items: center;
     /* align-items: end; */
-    gap: 1%;
+    /* gap: 1%; */
+    align-content: center;
 }
 .formsSt{
+    border: 5cap;
+    border-color: mediumslateblue;
     display: flex;
     align-items: center;
     align-self: center;

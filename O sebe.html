@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadanie 1</title>
-     <link rel="stylesheet" href="reset.css">
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src = "script.js"></script>
 </head>
 <body>
-       <header class="headSt">
+    <header class="headSt">
     <nav>
-        <ul class="ul-nav" style="font-size: 25px;line-height: 1.2;letter-spacing: 0.3em; list-style: none; align-items: center; gap: 2%;">
+        <ul class="ul-nav" style="font-size: 25px;line-height: 1.2;letter-spacing: 0.3em; list-style: none;">
             <li class="liSt">
                 <a href="."><img src="images/DnD-Emblem.png" alt="Loho" width="160" height="90"></a>
             </li>
@@ -19,7 +19,7 @@
             <li class="liSt">
                 <a href="">Competensii</a>
             </li>
-            <li class="liSt"><a href="">Portfolio</a></li>
+            <li class="liSt"><a href="Portfolio.html">Portfolio</a></li>
             <li class="liSt"><a href="">Kontakti</a></li>
             <li class="liSt"><a href="Rofl.html">Rafls</a></li>
              <li><a href="Reg.html">Regestration</a></li>
@@ -34,7 +34,12 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ut in totam laudantium laborum, ipsa consectetur, iste reprehenderit magnam aperiam quas facere beatae alias animi voluptatibus amet. Commodi, amet corporis?
     </div>
     <div>
-        
+        <input id = "ElRedBut" type="button" value="Сделать красным" onclick="Changecolor('red')">
+        <input id = "ElGreenBut" type="button" value="Сделать зелёным" onclick="Changecolor('green')">
+        <input id = "ElBlueBut" type="button" value="Сделать синим" onclick="Changecolor('blue')">
+        <input id = "ElWhiteBut" type="button" value="Сделать белым" onclick="Changecolor('white')">
+    </div>
+    <div>    
         <img src="images/Crazy_Frog.png" alt="Crazy" id="Crazy_Frog">
         <label for="Crazy_Frog">It's crazy, man!</label>
         
