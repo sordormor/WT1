@@ -58,7 +58,7 @@ background-color: cyan;
     align-items: center;
     /* align-items: end; */
     /* gap: 1%; */
-    align-content: center;
+    align-content:space-between;
 }
 .formsSt{
     border: 5cap;
@@ -68,4 +68,10 @@ background-color: cyan;
     align-self: center;
     position: absolute;
     left: 50%;
+}
+.dialSt{
+     border: 0;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: min(90vw, 420px);
 }

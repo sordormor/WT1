@@ -48,9 +48,35 @@
 <div><label for="question_input" class="cyanBack">Вапрос</label>
 <textarea cols="50" rows="10" class="cyanBack"></textarea>
 </div>
-<div><input type="submit" id = "sub">Отправить</button> </div>
+<div><input type="button" id = "chk" value="Отправить"></div>
 </form>
 
+<dialog id="confirmation" aria-labelledby="confirm-title" class="dialSt">
+    <h2 id="confirm-title">Удалить все товары?</h2>
+    <p>Это действие нельзя отменить.</p>
+    <form method="dialog">
+    <button value="cancel" autofocus>Нет</button>
+    <button value="ok">Да, удалить</button>
+    </form>
+</dialog>
+
+<script>
+    document.forms[0].addEventListener('submit',function(event){event.preventDefault();})
+    const dialog = document.getElementById(confirmtion);
+    const chkbt = document.getElementById(chk);
+chkbt.onclick = dialog.showModal();
+    
+  chkbt.addEventListener('click', () => {
+    dialog.returnValue = '';
+    dialog.showModal();
+  });
+
+  dialog.addEventListener('close', () => {
+    if (dialog.returnValue === 'ok') {
+      statusText.textContent = 'Корзина пуста';
+    }
+  });
+</script> 
 
 <footer class = "footSt">
     Сайт разработан ООО Челики 2026 все райтс ресервд<br>
