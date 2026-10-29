@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <header class="headSt">
+    <nav>
+        <ul class="ul-nav" style="font-size: 25px;line-height: 1.2;letter-spacing: 0.3em; list-style: none;">
+            <li class="liSt">
+                <a href="."><img src="images/DnD-Emblem.png" alt="Loho" width="160" height="90"></a>
+            </li>
+            <li class="liSt"><a href="O sebe.html">O sebe</a></li>
+            <li class="liSt">
+                <a href="">Competensii</a>
+            </li>
+            <li class="liSt"><a href="Portfolio.html">Portfolio</a></li>
+            <li class="liSt"><a href="">Kontakti</a></li>
+            <li class="liSt"><a href="Rofl.html">Rafls</a></li>
+             <li><a href="Reg.html">Regestration</a></li>
+        </ul>
+    </nav>
+    </header>
+      <h1>
+        Voprosi?
+    </h1>
+
+<form class="contain, formsST" style="margin: auto; width: auto;">
+<div class="flex-input-text"><div>Как ответ? Нада?</div>
+<label for ="r_mail">
+    <input type="radio" name="ans" id = "r_mail"> <div>Почка</div>
+     <input type="radio" name="ans" id = "r_mail"> <div>Не, спасибо</div>
+</label><br>
+</div>
+<div><label for="name_input">Ваше имечко
+<input type="text"name = "name_input"id = "name_input" size="30" pattern="[A-z]+" required>
+</label></div>
+<div><label for="phone_input">Тилифонеро</label>
+<input type="tel"name = "phone_input"id = "phone_input" size="30">
+</div>
+<div><label for="mail_input">Почка</label></div>
+<input type="email"name = "mail_input"id = "mail_input" size="30" class="cyanBack, contain">
+<div><label for="question_input" class="cyanBack">Вапрос</label>
+<textarea cols="50" rows="10" class="cyanBack"></textarea>
+</div>
+<div><input type="button" id = "chk" value="Отправить"></div>
+</form>
+
+<dialog id="confirmation" aria-labelledby="confirm-title" class="dialSt">
+    <h2 id="confirm-title">Удалить все товары?</h2>
+    <p>Это действие нельзя отменить.</p>
+    <form method="dialog">
+    <button value="cancel" autofocus>Нет</button>
+    <button value="ok">Да, удалить</button>
+    </form>
+</dialog>
+
+<script>
+    document.forms[0].addEventListener('submit',function(event){event.preventDefault();})
+    const dialog = document.getElementById(confirmtion);
+    const chkbt = document.getElementById(chk);
+chkbt.onclick = dialog.showModal();
+    
+  chkbt.addEventListener('click', () => {
+    dialog.returnValue = '';
+    dialog.showModal();
+  });
+
+  dialog.addEventListener('close', () => {
+    if (dialog.returnValue === 'ok') {
+      statusText.textContent = 'Корзина пуста';
+    }
+  });
+</script> 
+
+<footer class = "footSt">
+    Сайт разработан ООО Челики 2026 все райтс ресервд<br>
+    <img src="images/2XQh0BX_LVs1.jpg" alt="Sots seti" width="100">
+</footer>
+</body>
+</html>
